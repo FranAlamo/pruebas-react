@@ -1,0 +1,32 @@
+body {
+  background-image: url(../img/wallpaper.jpg);
+  background-size: cover;
+}
+img {
+  width: 30%;
+  display: flex;
+  margin-left: 30%;
+}
+.title-book {
+  color: rgb(60, 15, 2);
+  text-align: center;
+}
+.title-general {
+  color: rgba(60, 15, 2, 0.615);
+  text-align: center;
+}
+.content {
+  color: rgb(60, 15, 2);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 200%;
+  text-align: justify;
+  margin: 5%;
+}
+.list {
+  line-height: 350%;
+  color: rgb(60, 15, 2);
+  font-weight: bold;
+  font-size: 150%;
+  text-align: center;
+}

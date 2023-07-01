@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import ListaElementos from "./Components/one.jsx";
 import LibroMatarAUnRuiseñor from "./img/mataraunruiseñor.jpg";
 import ElMundoDeSofia from "./img/elmundodesofia.jpg";
@@ -30,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <h1>Lista de mis libros favoritos</h1>
+      <h1 className="title-general">¡Haz click en cada libro!</h1>
       <ListaElementos elementos={elementos} />
     </div>
   );

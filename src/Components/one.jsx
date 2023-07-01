@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../Styles/one.css";
 
 function ListaElementos({ elementos }) {
   const [elementoSeleccionado, setElementoSeleccionado] = useState(null);
@@ -7,7 +8,7 @@ function ListaElementos({ elementos }) {
   };
   return (
     <>
-      <ul>
+      <ul className="list">
         {elementos.map((elemento) => (
           <li key={elemento.id} onClick={() => handleClick(elemento)}>
             {elemento.titulo}
@@ -15,10 +16,13 @@ function ListaElementos({ elementos }) {
         ))}
       </ul>
       {elementoSeleccionado && (
-        <div>
-          <h2>{elementoSeleccionado.titulo}</h2>
-          <p>{elementoSeleccionado.contenido}</p>
-          <p>{elementoSeleccionado.image}</p>
+        <div className="content-all">
+          <h2 className="title-book">{elementoSeleccionado.titulo}</h2>
+          <p className="content">{elementoSeleccionado.contenido}</p>
+          <img
+            src={elementoSeleccionado.image}
+            alt={elementoSeleccionado.titulo}
+          />
         </div>
       )}
     </>
