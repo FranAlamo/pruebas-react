@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../Styles/one.css";
+import FormularioContacto from "../Components/Form.jsx";
 
 function ListaElementos({ elementos }) {
   const [elementoSeleccionado, setElementoSeleccionado] = useState(null);
@@ -23,6 +24,7 @@ function ListaElementos({ elementos }) {
             src={elementoSeleccionado.image}
             alt={elementoSeleccionado.titulo}
           />
+          <FormularioContacto />
         </div>
       )}
     </>
