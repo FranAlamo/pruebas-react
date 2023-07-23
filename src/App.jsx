@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Api from "../src/Components/Api";
 import ListaElementos from "./Pages/one.jsx";
 import LibroMatarAUnRuiseñor from "./img/mataraunruiseñor.jpg";
 import ElMundoDeSofia from "./img/elmundodesofia.jpg";
@@ -33,6 +34,7 @@ function App() {
     <div>
       <h1 className="title-general">¡Haz click en cada libro!</h1>
       <ListaElementos elementos={elementos} />
+      <Api />
     </div>
   );
 }
