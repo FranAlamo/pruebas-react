@@ -5,7 +5,7 @@ function Api() {
   );
   return (
     <div className="App">
-      <h1>Aqui se muestra la Api</h1>
+      <h1>Aqui se muestra la Api de ejemplo</h1>
       <div className="card">
         <ul>
           {error && <li>Error: {error}</li>}
